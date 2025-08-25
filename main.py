@@ -1,0 +1,7 @@
+print("Hello when inputting numbers do not use $ or %")
+Total_Bill = float(input("What is the total bill?: "))
+Tip = int(input("What % do you want to tip? Ex: 10, 12: "))
+Equal_Bill = int(input("How many people to split the bill?: "))
+You_Pay = (Total_Bill/Equal_Bill)+((Tip/100)*Total_Bill/Equal_Bill)
+You_Pay = round(You_Pay, 2) 
+print("You pay:", "$", You_Pay)
